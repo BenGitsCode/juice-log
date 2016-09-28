@@ -17,6 +17,10 @@ export default Ember.Route.extend({
       });
       this.store.unloadAll();
     },
+    createEntry (data) {
+     let entry = this.get('store').createRecord('entry', data);
+     return entry.save();
+     },
 
     error (reason) {
       let unauthorized = reason.errors.some((error) =>

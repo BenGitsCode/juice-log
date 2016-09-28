@@ -1,1 +1,15 @@
-{{yield}}
+{{!-- {{ohms-input ohms=details.ohms}}
+{{coil-input coil=details.coil}}
+{{voltage-input voltage=details.voltage}}
+{{wattage-input wattage=details.wattage}}
+{{mod-input mod=details.mod}}
+{{juice-input juice=details.juice}}
+{{notes-input notes=details.notes}} --}}
+
+<button type="submit" class="btn btn-primary" {{action "submit"}}>
+  New Entry
+</button>
+
+<button class="btn btn-default" {{action "reset"}}>
+  Cancel
+</button>

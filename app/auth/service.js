@@ -10,13 +10,29 @@ export default Ember.Service.extend({
     return this.get('ajax').post('/sign-up', {
       data: {
         credentials: {
-          email: credentials.email,
+          ohm: credentials.email,
           password: credentials.password,
           password_confirmation: credentials.passwordConfirmation,
         },
       },
     });
   },
+
+  createEntry (entry) {
+    return this.get('ajax').post('/new-entry', {
+      data: {
+        entry: {
+          ohms: entry.ohms,
+          coil: entry.coil,
+          voltage: entry.voltage,
+          mod: entry.mod,
+          juice: entry.juice,
+          notes: entry.notes,
+        },
+      },
+    });
+  },
+
 
   signIn (credentials) {
     return this.get('ajax').post('/sign-in', {
