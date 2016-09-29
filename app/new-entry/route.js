@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   flashMessages: Ember.inject.service(),
 
   actions: {
-    newEntry (details) {
+    createEntry (details) {
       this.get('auth').newEntry(details)
       .then(() => this.get('auth').newEntry(details))
       .then(() => this.transitionTo('application'))
