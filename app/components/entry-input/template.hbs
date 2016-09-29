@@ -1,0 +1,57 @@
+<div class="new-entry-form">
+<label for="ohms">ohms</label>
+{{input type="ohms"
+        id="ohms"
+        placeholder="0.4"
+        value=entry.ohms}}
+      </div>
+
+<div class="new-entry-form">
+<label for="coil">coil</label>
+{{input type="coil"
+        id="coil"
+        placeholder="24ga 2mm 6 wraps"
+        value=entry.coil}}
+      </div>
+
+<div class="new-entry-form">
+<label for="voltage">voltage</label>
+{{input type="voltage"
+        id="voltage"
+        placeholder="4.5v"
+        value=entry.voltage}}
+      </div>
+
+<div class="new-entry-form">
+<label for="wattage">wattage</label>
+{{input type="wattage"
+        id="wattage"
+        placeholder="52w"
+        value=entry.wattage}}
+      </div>
+
+<div class="new-entry-form">
+<label for="mod">mod</label>
+{{input type="mod"
+        id="mod"
+        placeholder="Rx200s"
+        value=entry.mod}}
+      </div>
+
+<div class="new-entry-form">
+<label for="juice">juice</label>
+{{input type="juice"
+        id="juice"
+        placeholder="milk2"
+        value=entry.juice}}
+      </div>
+<div class="new-entry-form">
+<label for="notes">notes</label>
+{{input type="notes"
+        id="notes"
+        placeholder="Tasty clouds"
+        value=entry.notes}}
+      </div>
+
+      {{new-entry-form submit="createEntry"
+          createEntry='createEntry'}}
