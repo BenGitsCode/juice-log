@@ -1,1 +1,6 @@
-{{outlet}}
+<ul>
+  {{#each my-application.entry as |entry|}}
+entry{{my-application/my-entries entry=entry
+                      delete='deleteEntry'}}
+  {{/each}}
+</ul>
